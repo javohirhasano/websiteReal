@@ -102,7 +102,7 @@ display: none;
     display: flex;
     margin-top: 0;
     min-height: 70px;
-    min-width: 300px;
+    min-width: 100%;
     position: fixed;
     top: 0;
     left: 0;
