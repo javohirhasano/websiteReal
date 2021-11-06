@@ -50,19 +50,18 @@ const Header = () => {
                         </div>
                     ))}
                 </div>
-                <img className="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAHXPluq6GtTRPDIHRv5kJPy86uFjp5sO7hg&usqp=CAU"></img>
+                <h5 className="logoTitle">SalePro</h5>
 
                 <div className="buttons">
-                    <Button className="butn1" animated='vertical'>
+                    <Button color='purple' className="butn1" animated='vertical'>
                         <Button.Content hidden>Shop</Button.Content>
                         <Button.Content visible>
                             <Icon name='shop' />
                         </Button.Content>
                     </Button>
-                    <Button className="butn1" animated='fade'>
-                        <Button.Content visible>Sign-up for a Pro account</Button.Content>
-                        <Button.Content hidden>$12.99 a month</Button.Content>
-                    </Button>
+                    <Button className="butn1" color='twitter'>
+                        <Icon name='instagram' /> Instagram
+    </Button>
                 </div>
                 <div className="butn">
                     <Button onClick={menuToggle} icon>

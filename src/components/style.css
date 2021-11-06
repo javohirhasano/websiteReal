@@ -4,11 +4,18 @@ list-style-type: none;
 a{
     text-decoration: none;
 }
+.logoTitle{
+    margin-bottom: 20px;
+    color: rgb(15, 87, 100);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 header{
-    background-color: white;
+    background: rgb(255,158,248);
+    background: linear-gradient(154deg, rgba(255,158,248,1) 0%, rgba(50,235,236,1) 97%);
     display: flex;
+    align-items: center;
     margin-top: 0;
-    min-height: 70px;
+    min-height: 50px;
     min-width: 100%;
     position: fixed;
     top: 0;
@@ -72,7 +79,7 @@ display: none;
     display: none;
     
 }
-.menuBar .logo{
+.menuBar .logoTitle{
     display: none;
 }
 @media(max-width:500px){

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import slideData from '../data/slideData'
 import { Button, Icon } from 'semantic-ui-react'
 import "./products.css"
@@ -14,12 +14,14 @@ const Home = () => {
         const index = activeSlide - 1 < 0 ? slideData.length - 1 : activeSlide - 1
         setactiveSlide(index)
     }
+
+
     return (
         <div className="home">
             {slideData.map((item, index) => (
                 <div className={`SlideHero ${index === activeSlide ? "active" : ""}`} key={index}>
                     <div className="Girls">
-                        <div className="writes">
+                        <div className={`writes`} >
                             <h1 className={`text-${item.color}`}>{item.title}</h1>
                             <p>{item.description}</p>
                             <Button primary className="butn1" animated='vertical'>
